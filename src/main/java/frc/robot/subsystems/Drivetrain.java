@@ -22,10 +22,6 @@ public class Drivetrain extends SubsystemBase {
   MotorControllerGroup m_left = new MotorControllerGroup(leftFront, leftBack);
   MotorControllerGroup m_right = new MotorControllerGroup(rightFront, rightBack);
 
-  public Drivetrain() {
-
-  }
-
   // function which passes in 2 values and sends them to the controller group
   public void tankDrive(double left, double right) {
     m_left.set(left);
